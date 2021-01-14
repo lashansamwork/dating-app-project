@@ -1,13 +1,13 @@
 import React from 'react';
-import {Button, View} from 'react-native';
+import {View} from 'react-native';
+import {Button} from 'react-native-paper';
 
 const WelcomeScreen = ({navigation}) => {
     return(
         <View>
-            <Button 
-                title="go to sign up"
-                onPress={() => navigation.navigate("SignUpScreen")}
-                />
+            <Button onPress={() => navigation.navigate("SignUpScreen")} >
+                Go to Sign Up
+            </Button>
         </View>
     );
 }
