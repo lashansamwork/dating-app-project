@@ -9,14 +9,11 @@ const PrimaryNavigator = () => {
     return(
         <Stack.Navigator
         screenOptions={{
-                headerShown: false,
+                headerShown: false,          
             }}
         >
-            {isSignout? 
-            <Stack.Screen name="SignUpNavigator" component={SignUpNavigator} />:
-            <Stack.Screen name="HomeNavigator" component={HomeNavigator} />
-            }
-           
+            {isSignout?<Stack.Screen name="SignUpNavigator" component={SignUpNavigator} />:
+            <Stack.Screen name="HomeNavigator" component={HomeNavigator} />}
         </Stack.Navigator>
     );
 }
