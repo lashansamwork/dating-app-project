@@ -8,6 +8,8 @@ target 'datingAppProject' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'Firebase/Analytics'
+
   target 'datingAppProjectTests' do
     inherit! :complete
     # Pods for testing
